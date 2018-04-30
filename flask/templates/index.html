@@ -1,0 +1,24 @@
+    <!doctype html>
+	<style>
+	    body {
+	background: #06beb6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	}
+	</style>
+
+    <h1 style="font-size:40px;">Facial Recognition </h1>
+      <form method="post" action="{{ url_for('upload') }}" enctype="multipart/form-data">
+        Input File <input type="file" name="file1">
+     <br>
+{#     <br>#}
+{#     Threshold:#}
+{#      <input type="number" name="threshold"#}
+{#       min="0" max="2" step="0.01" value="0.95">#}
+{#     <br>#}
+     
+    <p style="text-align:left;">    <button type="submit">Upload</button>
+     </p>
+      </form>
+    </html>
